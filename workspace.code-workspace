@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\workspace"
+		},
+		{
+			"path": "..\\Grid system"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MyShoppee"
+	}
+}

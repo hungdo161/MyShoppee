@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #EE4D2D;
+    --white-color: #fff;
+    --back-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --star-gold-color: #FFCE3E;
+    --header-heigth: 120px;
+    --navbar-heigth: 34px;
+    --header-with-search-heigth: calc(var(--header-heigth) - var(--navbar-heigth));
+    --header-sort-bar-height: 46px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; 
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#app {
+    overflow: hidden;
+}  
+
+
+
+
+                        /* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+
+    }
+}
+
+/* buuton style */
+.btn {
+    min-width: 124px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn--size-s {
+    height: 30px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--prinary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #999999a6;
+    color: #ffffff52;
+
+}
+
+.auth-form__socials-title {
+    margin: 0 24px;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*  Selection*/
+.select-input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+/* pagination */
+.pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home-product__pagination {
+    margin: 36px 0;
+    padding-left: 0;
+}
+
+
+.pagination-item {
+    list-style-type: none;
+    margin: 0 12px;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    font-weight: 400;
+}
+
+.pagination-item--active.pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 2px ;
+}
+
+.pagination-item--active.pagination-item__link:hover {
+    opacity: 0.8;
+}
+
+
